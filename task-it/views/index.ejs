@@ -1,0 +1,29 @@
+<!-- views/index.ejs -->
+
+<!DOCTYPE html>
+<html ng-app="taskitapp" lang="en">
+	<head>
+		<% include partials/head %>
+	</head>
+	<body ng-controller="bodyController" class="container">
+		<% include partials/header %>
+		<h2>Welcome, <%= user.name %>!</h2>
+		<br/>
+		<h3> Please select a project, list, or task, or create a new one.  </h3>
+		<div id="mainList">
+			 
+			<div class="well well-lg">
+			
+				<ul class="list-group">
+					<li ng-hide="masterList.length">No items. Add something!</li>
+					<li class="list-group-item" ng-repeat="item in masterList" masterListItem >
+						{{ item.title }} &nbsp; 
+						<span class="badge">{{ item.count-unfinished }}</span>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
