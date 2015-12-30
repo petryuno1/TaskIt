@@ -1,6 +1,6 @@
 <!-- Angular Directive for Task Items -->
 
-<div class="tiTask" ng-class="{'tiTask-condensed': homeView }" data-toggle="tooltip" data-placement="left" title="{{ item.description }}">
+<div class="tiTask" ng-class="{'tiTask-condensed': homeView }" data-toggle="tooltip" data-placement="left" title="{{ item.description }}" onmouseenter="$(this).tooltip('show')">
     <h4> {{ item.title }} </h4>
     <br/>
     <label>Due </label> <span class="tiDateDisplay">{{ item.dueDate }}</span>

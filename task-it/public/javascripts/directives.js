@@ -8,7 +8,6 @@ taskItApp.directive('taskitem', [function(){
                 scope.template = '/web/directives/taskDirective.html'
                  
             }
-            $('[data-toggle="tooltip"]').tooltip();
         }
         
     };

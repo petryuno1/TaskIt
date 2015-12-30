@@ -4,12 +4,13 @@
     background-color: white;
     height: auto;
     width:85%;
-    border: 1px solid #333;
+    border: 1px solid #ccc;
     border-radius: 2px;
     padding: 2px;
+    box-shadow: 1px 1px 10px #454545;
 }
 .tiTask:hover{
-    background-color: #c1c1c1;
+    background-color: #eee;
 }
 .tiTask-condensed{
     height: 85px;
