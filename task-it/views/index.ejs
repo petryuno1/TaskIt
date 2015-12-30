@@ -7,19 +7,17 @@
 	</head>
 	<body ng-controller="bodyController" class="container">
 		<% include partials/header %>
-		<h2>Welcome, <%= user.name %>!</h2>
 		<br/>
-		<h3> Please select a project, list, work order, or task.</h3>
+		<h3> Please select a container or task to begin.</h3>
 		<br/> <h4>Click here to create something new </h4> 
-		<div id="mainList">
+		<div id="mainList"><!-- uncategorized container -->
 			 
 			<div class="well well-lg">
-			
+			    <h3>Test Container</h3>
 				<ul class="list-group">
 					<li ng-hide="masterList.length">No items. Add something!</li>
-					<li class="list-group-item" ng-repeat="item in masterList" masterListItem >
-						{{ item.title }} &nbsp; 
-						<span class="badge">{{ item.count-unfinished }}</span>
+					<li class="list-group-item" ng-repeat="item in masterList" taskItem >
+						<!--<span class="badge">{{ item.countUnfinished }}</span>-->
 					</li>
 				</ul>
 			</div>

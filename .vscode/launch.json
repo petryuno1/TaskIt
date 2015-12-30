@@ -5,7 +5,7 @@
 			"name": "TaskIt",
 			"type": "node",
 			"request": "launch",
-			"program": "task-it/app.js",
+			"program": "task-it/bin/www",
 			"stopOnEntry": false,
 			"args": [],
 			"cwd": ".",

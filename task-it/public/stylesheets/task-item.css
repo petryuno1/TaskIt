@@ -1,0 +1,29 @@
+/*stylesheet for TaskIt Task Items */
+
+.tiTask{
+    background-color: white;
+    height: auto;
+    width:85%;
+    border: 1px solid #333;
+    border-radius: 2px;
+    padding: 2px;
+}
+.tiTask:hover{
+    background-color: #c1c1c1;
+}
+.tiTask-condensed{
+    height: 85px;
+}
+
+.tiStatus{
+    float: left;
+    width:5px;
+    position: fixed;
+}
+.tiStatus-open{
+    background-color: gray;
+}
+.tiStatus-closed{
+    background-color: lime;
+}
+
