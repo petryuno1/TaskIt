@@ -7,31 +7,27 @@
 	</head>
 	<body ng-controller="bodyController" class="container">
 		<% include partials/header %>
-		<br/>
-		<div class="row" style="margin: 0 auto;">
-            <div class="col-lg-5" style="text-align: center;">
-                <h4 > Please select a container or task to begin.</h4>
+		<div id="main-content">
+            <div class="row" style="margin: 0 auto;">
+                <div class="col-lg-5" style="text-align: center;">
+                    <h4 > Please select a container or task to begin.</h4>
+                </div>
+                <div class="col-lg-2" style="text-align: center;">
+                    <h4 >  | OR | </h4>
+                </div>
+                <div class="col-lg-5" style="text-align: center;">
+                    <h4 >Create something new <% include partials/itemList %>  </h4>
+                </div> 
             </div>
-            <div class="col-lg-2" style="text-align: center;">
-                <h3 >  | OR | </h3>
+            <div id="mainList"><!-- uncategorized container -->
+                
+                <ol>
+                    <li ng-hide="masterList.length">No items. Add something!</li>
+                    <li class="" ng-repeat="item in masterList" taskItem ></li>
+                </ol>
+                </div>
+                
             </div>
-            <div class="col-lg-5" style="text-align: center;">
-                <h4 >Create something new <% include partials/itemList %>  </h4>
-            </div> 
 		</div>
-		<div id="mainList"><!-- uncategorized container -->
-			 
-			<div class="well well-lg">
-			    <h3>Test Container</h3>
-				<ol>
-					<li ng-hide="masterList.length">No items. Add something!</li>
-					<li class="" ng-repeat="item in masterList" taskItem >
-						<!--<span class="badge">{{ item.countUnfinished }}</span>-->
-					</li>
-				</ol>
-			</div>
-			
-		</div>
-		
 	</body>
 </html>

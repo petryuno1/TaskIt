@@ -5,8 +5,11 @@ taskItApp.directive('taskitem', [function(){
         replace: true,
         link: function postLink(scope){
             if (scope.item.type == 'task'){
-                scope.template = '/web/directives/taskDirective.html'
+                scope.template = '/web/directives/taskDirective.html';
                  
+            } 
+            else if (scope.item.type == 'container') {
+                scope.template = '/web/directives/containerDirective.html';
             }
         }
         

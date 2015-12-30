@@ -1,5 +1,6 @@
 body {
   padding: 0;
+  padding-top: 70px;
   margin: 0;
   clear: both;
   /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
@@ -7,4 +8,40 @@ body {
 
 a {
   color: #00B7FF;
+}
+
+#main-content{
+    transition-duration: 1.8s;
+}
+#main-content.expanded{
+    opacity: 0.4;
+}
+
+#nav-header{
+    z-index: 200;
+    border-top: 0;
+    border-radius: 0px 0px 3px 3px;
+    height: 49px;
+    width:100%;
+    margin: 0 auto;
+    transition-duration: 1.8s;
+}
+@media screen and (min-width: 1200px){
+    #nav-header{
+        width:70%;
+    }
+}
+#nav-header.expanded{
+    height: 292px;
+}
+
+#nav-settings{
+    text-align:center;
+    width:80%;
+    margin: 0 auto;
+    margin-top:-103px;
+    transition-duration: 1.8s;
+}
+#nav-settings.expanded{
+    margin-top: 140px;
 }

@@ -1,0 +1,7 @@
+<div class="well well-lg">
+    <h3>{{ item.name }}</h3>
+    <span class="badge">{{ item.countUnfinished }}</span>
+    <ol>
+        <li ng-repeat="child in item.children" ></li>
+    </ol>
+</div>

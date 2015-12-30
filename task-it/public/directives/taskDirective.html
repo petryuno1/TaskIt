@@ -1,11 +1,11 @@
 <!-- Angular Directive for Task Items -->
 
-<div class="tiTask" ng-class="{'tiTask-condensed': homeView }" data-toggle="tooltip" data-placement="left" title="{{ item.description }}" onmouseenter="$(this).tooltip('show')">
-    <h4> {{ item.title }} </h4>
-    <br/>
-    <label>Due </label> <span class="tiDateDisplay">{{ item.dueDate }}</span>
-    <div class="tiStatus" ng-class="tiStatus-{{ item.status.statusText }}"></div>
+<div class="tiTask" ng-class="{'tiTask-condensed': homeView }">
+    <div class="tiStatus tiStatus-{{ item.status.statusText }}"></div>
+    <h4 data-toggle="tooltip" data-placement="right" title="{{ item.description }}" onmouseenter="$(this).tooltip('show')"> {{ item.title }} </h4>
     <div class="assignees" style="float:right;">
         <user ng-class="{'tiAssignee-condensed': homeView }" ng-repeat="user in item.assignee" ></user>
     </div>
+    <br/>
+    <label>Due </label> <span class="tiDateDisplay">{{ item.dueDate }}</span>
 </div>

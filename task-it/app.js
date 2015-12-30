@@ -63,4 +63,9 @@ user = {
   group: "admin"
 };
 
+client = {
+    name: "Sample Organization",
+    members: []
+};
+
 module.exports = app;
