@@ -1,7 +1,7 @@
 <div class="well well-lg">
-    <h3>{{ item.name }}</h3>
-    <span class="badge">{{ item.countUnfinished }}</span>
+    <h3>{{ item.title }}</h3>
+    <label>Unfinished items &nbsp; </label><span class="badge"> {{ item.countUnfinished }}</span>
     <ol>
-        <li ng-repeat="child in item.children" ></li>
+        <li ng-repeat="child in item.children" childitem ></li>
     </ol>
 </div>

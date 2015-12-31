@@ -1,12 +1,22 @@
 .tiAssignee{
     background-color: transparent;
-    background-image: url('/web/images/userAnon.png');
+    /*background-image: url('/web/images/userAnon.png');*/
     background-clip: content-box;
     background-size: contain;
-    width: 48px;
-    height: 48px;
+    width: 24px;
+    height: 24px;
     display: inline-block;
-    border-radius: 48px;
+    border-radius: 24px;
     margin: 1px;
-    border: 2px outset gray;
+    box-shadow: 0px 0px 5px inset;
+    line-height: 1.25 !important;
+    text-align: center;
+}
+.tiAssignee:hover{
+    box-shadow: 0px 0px 5px 1px;
+}
+.tiAssignee:active{
+    box-shadow: 0px 0px 1px 1px;
+    border: 1px solid #222;
+    
 }

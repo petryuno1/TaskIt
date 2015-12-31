@@ -2,7 +2,7 @@
 
 <div class="tiTask" ng-class="{'tiTask-condensed': homeView }">
     <div class="tiStatus tiStatus-{{ item.status.statusText }}"></div>
-    <h4 data-toggle="tooltip" data-placement="right" title="{{ item.description }}" onmouseenter="$(this).tooltip('show')"> {{ item.title }} </h4>
+    <h4 data-toggle="tooltip" data-placement="right" title="{{ item.description }}" onmouseenter="$(this).tooltip('show')">{{ title }} {{ item.title }} </h4>
     <div class="assignees" style="float:right;">
         <user ng-class="{'tiAssignee-condensed': homeView }" ng-repeat="user in item.assignee" ></user>
     </div>
